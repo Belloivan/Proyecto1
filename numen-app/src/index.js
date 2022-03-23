@@ -3,10 +3,11 @@ import ReactDOM from 'react-dom';
 import './index.css';
 import App from './App';
 import reportWebVitals from './reportWebVitals';
+import RoutesNav from './Rutas/RoutesNav';
 
 ReactDOM.render(
   <React.StrictMode>
-    <App />
+    <RoutesNav />
   </React.StrictMode>,
   document.getElementById('root')
 );

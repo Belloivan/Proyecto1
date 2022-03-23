@@ -27,7 +27,7 @@ export default function Layout({ children}) {
     }
 
   return (
-    <div className="h-screen">
+    <div className="h-screen" >
         <NavBar toggleOpen={toggleOpen} />
         {isOpen  && <Menu  toggleOpen = {toggleOpen}/> }
         { children }

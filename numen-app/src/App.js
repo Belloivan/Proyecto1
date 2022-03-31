@@ -1,5 +1,6 @@
 import logo from './logo.svg';
 import './App.css';
+import Banner from "./components/Banner"
 
 function App() {
   return (
@@ -18,7 +19,9 @@ function App() {
           Learn React
         </a>
       </header>
+      <section> <Banner/> </section>
     </div>
+   
   );
 }
 

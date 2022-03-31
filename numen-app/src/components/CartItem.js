@@ -3,21 +3,24 @@ const CartItem = ({data, deleteFromCart, addToCart}) => {
     let {img, name, price, quantity} = data;
 
     return (
-    <div className="cart-item flex items-center hover:bg-gray-100 -mx-8 px-6 py-5">
+    <div className="cart-item flex items-center hover:bg-gray-100 -mx-10 px-6 py-5">
          <div className="flex w-2/5"> 
+            <button className="font-semibold hover:text-red-500 text-red-500 text-xs px-2" onClick={() => deleteFromCart(data, true)}>X</button>
             <div className="w-20">
-            <img className="h-24" src={img} alt=""/>
+            <img className="h-26" src={img} alt=""/>
             </div>
-            </div>
+            
             <div className="flex flex-col justify-between ml-4 flex-grow">    
             <span className="font-bold text-sm">{name}</span>
-            <button className="font-semibold hover:text-red-500 text-gray-500 text-xs" onClick={() => deleteFromCart(data, true)}>Eliminar todos</button>
+            <span className="text-red-500 text-xs">Apple</span>
+            
             </div>    
+            </div>  
             <div  className="flex justify-center w-1/5">
             <svg onClick={() =>
                 deleteFromCart(data)} className="fill-current text-gray-600 w-3" viewBox="0 0 448 512"><path d="M416 208H32c-17.67 0-32 14.33-32 32v32c0 17.67 14.33 32 32 32h384c17.67 0 32-14.33 32-32v-32c0-17.67-14.33-32-32-32z"/>
             </svg>
-
+           
             <input className="mx-2 border text-center w-8" type="text" value={quantity}/>
 
             <svg  onClick={() =>

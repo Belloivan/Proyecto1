@@ -1,7 +1,7 @@
 import React from 'react'
 import { Link } from 'react-router-dom'
 
-export default function Menu(toggleOpen) {
+export default function Menu({toggleOpen}) {
   return (
     <div  className="grid grid-rows-2 text-center items-center bg-gray-400 float-right" onClick={toggleOpen}>
         

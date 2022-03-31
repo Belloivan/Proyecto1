@@ -1,6 +1,7 @@
 import React from "react";
 
-function Banner () {
+
+export default function Banner() {
   return (
     <div className="container px-6 py-16 mx-auto bg-green-400">
     <div
@@ -35,4 +36,4 @@ function Banner () {
   );
 }
 
-export default Banner
+

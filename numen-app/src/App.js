@@ -19,7 +19,6 @@ function App() {
           Learn React
         </a>
       </header>
-      <section> <Banner/> </section>
     </div>
    
   );

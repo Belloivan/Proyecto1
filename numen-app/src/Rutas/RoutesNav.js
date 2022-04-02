@@ -1,17 +1,17 @@
 import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
-
-
-
-
 import About from "../components/About";
 import Home from "../components/Home";
 import Cart from "../components/Cart";
 import Contact from "../components/Contact";
 import Login from "../components/Login";
 import Layout from "../components/Layout";
+import Banner from "../components/Banner";
+
 const RoutesNav = () => {
+
    return (
      <Router>
+       
         <Layout>
         <Routes>
                 
@@ -22,7 +22,8 @@ const RoutesNav = () => {
               <Route path="/login" element= {<Login />} />
               
               
-       </Routes>
+       </Routes> 
+       <div><Banner/></div>
        </Layout>
      </Router>
 );

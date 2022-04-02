@@ -11,7 +11,7 @@ export default function Banner() {
           <p className="text-4xl font-semibold leading-9 text-gray-100 dark:text-white">Toma las mejores fotos</p>
         </div>
         <div className="mt-4 xl:mt-6">
-          <p className="text-base leading-6 text-gray-200 dark:text-white">Disfrutalo a un precio increible</p>
+          <p className="text-base leading-6 text-gray-200 dark:text-white">Disfrutalo a un precio increible.</p>
         </div>
         <div className="w-full mt-2 xl:mt-4">
           <button

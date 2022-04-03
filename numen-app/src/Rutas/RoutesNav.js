@@ -1,14 +1,12 @@
 import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
-
-
-
-
 import About from "../components/About";
 import Home from "../components/Home";
 import Cart from "../components/Cart";
 import Contact from "../components/Contact";
 import Login from "../components/Login";
 import Layout from "../components/Layout";
+import PieDePagina from "../components/Piedepagina";
+
 const RoutesNav = () => {
    return (
      <Router>

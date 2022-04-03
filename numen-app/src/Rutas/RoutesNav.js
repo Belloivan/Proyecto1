@@ -5,7 +5,7 @@ import Cart from "../components/Cart";
 import Contact from "../components/Contact";
 import Login from "../components/Login";
 import Layout from "../components/Layout";
-import PieDePagina from "../components/Piedepagina";
+import Piedepagina from "../components/Piedepagina";
 
 const RoutesNav = () => {
    return (
@@ -21,6 +21,7 @@ const RoutesNav = () => {
               
               
        </Routes>
+       <div><Piedepagina/></div>
        </Layout>
      </Router>
 );

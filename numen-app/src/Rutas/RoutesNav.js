@@ -6,6 +6,7 @@ import Contact from "../components/Contact";
 import Login from "../components/Login";
 import Layout from "../components/Layout";
 import Piedepagina from "../components/Piedepagina";
+import Redessociales from "../components/Redessociales";
 
 const RoutesNav = () => {
    return (
@@ -21,6 +22,7 @@ const RoutesNav = () => {
               
               
        </Routes>
+       <div><Redessociales/> </div>
        <div><Piedepagina/></div>
        </Layout>
      </Router>

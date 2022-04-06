@@ -3,10 +3,10 @@ import { Link } from "react-router-dom";
 
 export default function Banner() {
   return (
-    <div className="container w-screen max-w-full py-0 m-0 bg-gradient-to-r from-black to-blue-700">
+    <div className="w-screen py-0 m-0 bg-gradient-to-r from-black via-gray-600 to-slate-400">
     <div
-      className="flex flex-col items-center justify-center space-y-8 lg:flex-row xl:space-x-44 lg:space-x-24 lg:space-y-0">
-      <div className="flex flex-col items-start justify-start md:px-12 lg:px-0 lg:w-2/5 xl:w-3/12">
+      className="flex flex-col items-center justify-center space-y-8 lg:flex-row xl:space-x-60 lg:space-x-24 lg:space-y-0">
+      <div className="flex flex-col items-start justify-start al m-14 mx-30 md:px-12 lg:px-0 xl:w-9/12 lg:w-2/5">
         <div className="mt-2 xl:mt-4">
           <p className="text-4xl font-semibold leading-9 text-gray-100 dark:text-white">Toma las mejores fotos</p>
         </div>
@@ -20,7 +20,7 @@ export default function Banner() {
         </div>
       </div>
       <div className="">
-        <img className="" src="https://www.resizepixel.com/Image/qm316l8beo/Preview/2255.jpg?v=973f48d1-7c91-48b7-90cc-ae75dec405ff" alt="girl" />
+        <img className="bg-red-100 bg-red-400 place-content-between w-" src="https://www.xtrafondos.com/wallpapers/resized/montana-colorida-al-atardecer-6828.jpg?s=large" alt="girl" />
       </div>
     </div>
   </div> 

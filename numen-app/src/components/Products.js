@@ -10,8 +10,8 @@ export default function Products() {
   const { products, cart } = state;
    
   const updateState = async () => {
-    const productsURL = "https://apicarrito.maxiconstancio.repl.co/products";
-    const cartURL = "https://apicarrito.maxiconstancio.repl.co/cart";
+    const productsURL = "http://localhost:3000/products";
+    const cartURL = "http://localhost:3000/cart";
     const resProducts = await axios.get(productsURL);
     const resCart = await axios.get(cartURL);
     const newProduct = await resProducts.data;
@@ -24,11 +24,11 @@ export default function Products() {
   }, []);
   const deleteFromCart = (data, all = false) => {
     // console.log(id, all)
-    // Explicar esto antes que la programación del reducer
+
     let itemInCart = state.cart.find(
       (item) => item.codeProduct === data.codeProduct
     );
-    let endpoint = `https://apicarrito.maxiconstancio.repl.co/cart/${data.codeProduct}`;
+    let endpoint = `http://localhost:3000/cart/${data.codeProduct}`;
 
     if (all || data.quantity === 1) {
       console.log("salta aca");
@@ -51,7 +51,7 @@ export default function Products() {
     );
 
     if (itemInCart) {
-      let endpoint = `https://apicarrito.maxiconstancio.repl.co/cart/${data.codeProduct}`;
+      let endpoint = `http://localhost:3000/cart/${data.codeProduct}`;
 
       let options = {
         method: "PUT",
@@ -62,7 +62,7 @@ export default function Products() {
     } else {
       axios({
         method: "POST",
-        url: "https://apicarrito.maxiconstancio.repl.co/cart",
+        url: "http://localhost:3000/cart",
         data: { ...data, quantity: 1 },
       });
     }
@@ -80,6 +80,7 @@ export default function Products() {
   });
 
   return isLoading ? (
+      // Spinner Loading
       <div className="text-center">
           <svg role="status" className="inline mr-2 w-8 h-8 text-gray-200 animate-spin dark:text-gray-600 fill-blue-600" viewBox="0 0 100 101" fill="none" xmlns="http://www.w3.org/2000/svg">
         <path d="M100 50.5908C100 78.2051 77.6142 100.591 50 100.591C22.3858 100.591 0 78.2051 0 50.5908C0 22.9766 22.3858 0.59082 50 0.59082C77.6142 0.59082 100 22.9766 100 50.5908ZM9.08144 50.5908C9.08144 73.1895 27.4013 91.5094 50 91.5094C72.5987 91.5094 90.9186 73.1895 90.9186 50.5908C90.9186 27.9921 72.5987 9.67226 50 9.67226C27.4013 9.67226 9.08144 27.9921 9.08144 50.5908Z" fill="currentColor"/>
@@ -87,13 +88,14 @@ export default function Products() {
     </svg>
       </div>
   ):(
-    <div className="mx-auto container py-16 px-6 bg-green-400">
+    // Products  
+    <div className="mx-auto container py-0 px-6">
       <div className="container md:auto text-center">
-        <h1> Carrito de Compras</h1>
+        {/*<h1> Carrito de Compras</h1>}
         
-        <h2>Productos</h2>
+        <h2>Productos</h2>*/}
 
-        <div className="box grid-responsive grid justify-items-center grid-flow-row-dense  grid-cols-1 grid-rows-1 md:grid-cols-2 md:grid-rows-2 lg:grid-cols-4 grid-rows-4  ">
+        <div className="box grid-responsive grid gap-4 justify-items-center grid-flow-row-dense  grid-cols-1  md:grid-cols-2  lg:grid-cols-3  xl:grid-cols-4    ">
           {products.map((product) => (
             <Product
               key={product["_id"]}

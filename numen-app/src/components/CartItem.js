@@ -1,18 +1,23 @@
+import { useState } from "react";
+import ProductModal from "./ProductModal";
 
 const CartItem = ({data, deleteFromCart, addToCart}) => {
     let {img, name, price, quantity} = data;
+    const [showModal, setShowModal] = useState(false);
+    
 
     return (
     <div className="cart-item flex items-center hover:bg-gray-100 -mx-10 px-6 py-5">
          <div className="flex w-2/5"> 
             <button className="font-semibold hover:text-red-500 text-red-500 text-xs px-2" onClick={() => deleteFromCart(data, true)}>X</button>
             <div className="w-20">
-            <img className="h-26" src={img} alt=""/>
+            <img className="h-26 "  src={img} alt="" />
             </div>
             
             <div className="flex flex-col justify-between ml-4 flex-grow">    
             <span className="font-bold text-sm">{name}</span>
-            <span className="text-red-500 text-xs">Apple</span>
+            <span className="visible sm:invisible font-bold text-sm">{data.description}</span>
+            <span className="text-red-500 text-xs cursor-pointer hover:underline" onClick={() => setShowModal(true)}>Detalles</span>
             
             </div>    
             </div>  
@@ -31,7 +36,16 @@ const CartItem = ({data, deleteFromCart, addToCart}) => {
           <span className="text-center w-1/5 font-semibold text-sm">${price}</span>
           <span className="text-center w-1/5 font-semibold text-sm"> ${price * quantity}</span>
    
-                
+          {showModal ? (
+          //MODAL DE PRODUCTO
+          <ProductModal
+              data={data}
+              addToCart={addToCart} 
+              deleteFromCart = {deleteFromCart}
+              cart = {data||0}
+              setShowModal={setShowModal}
+          />
+        ) : null}            
     </div>
     )
     }

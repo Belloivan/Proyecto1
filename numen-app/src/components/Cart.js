@@ -6,11 +6,12 @@ import axios from "axios";
 const Cart = () => {
   const [state, dispatch] = useReducer(cartReducer, cartInitialState);
   const [isLoading, setLoading] = useState(true);
+  
   const { cart } = state;
 
   const updateState = async () => {
-    const productsURL = "https://apicarrito.maxiconstancio.repl.co/products";
-    const cartURL = "https://apicarrito.maxiconstancio.repl.co/cart";
+    const productsURL = "http://localhost:3000/products";
+    const cartURL = "http://localhost:3000/cart";
     const resProducts = await axios.get(productsURL);
     const resCart = await axios.get(cartURL);
     const newProduct = await resProducts.data;
@@ -28,7 +29,7 @@ const Cart = () => {
     let itemInCart = state.cart.find(
       (item) => item.codeProduct === data.codeProduct
     );
-    let endpoint = `https://apicarrito.maxiconstancio.repl.co/cart/${data.codeProduct}`;
+    let endpoint = `http://localhost:3000/cart/${data.codeProduct}`;
 
     if (all || data.quantity === 1) {
       console.log("salta aca");
@@ -50,7 +51,7 @@ const Cart = () => {
     let itemInCart = state.cart.find(item => item.codeProduct === data.codeProduct)
     
     if (itemInCart) {
-        let endpoint=`https://apicarrito.maxiconstancio.repl.co/cart/${data.codeProduct}`
+        let endpoint=`http://localhost:3000/cart/${data.codeProduct}`
         
         let options = {
             method: "PUT",
@@ -61,7 +62,7 @@ const Cart = () => {
     } else {
         axios({
             method: 'POST',
-            url: 'https://apicarrito.maxiconstancio.repl.co/cart',
+            url: 'http://localhost:3000/cart',
             data: ({...data, quantity: 1})
         }).then(console.log(data))
     }
@@ -75,7 +76,7 @@ const Cart = () => {
 };
     
   const clearCart = () => {
-    axios.delete("https://apicarrito.maxiconstancio.repl.co/cart").then(console.log("ok"));
+    axios.delete("https://localhost:3000/cart").then(console.log("ok"));
     dispatch({ type: TYPES.CLEAR_CART });
   };
   let count = 0;
@@ -97,7 +98,7 @@ const Cart = () => {
       </div>
   ) : (
      
-    <div className="mx-auto container py-16 px-6 bg-green-400">
+    <div className="mx-auto container py-16 px-6">
       
      <div className="container mx-auto mt-10">
     <div className="flex shadow-md my-10">

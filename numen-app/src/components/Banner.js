@@ -20,7 +20,7 @@ export default function Banner() {
         </div>
       </div>
       <div className="">
-        <img className="bg-red-100 bg-red-400 place-content-between w-" src="https://www.xtrafondos.com/wallpapers/resized/montana-colorida-al-atardecer-6828.jpg?s=large" alt="girl" />
+        <img className="" src="https://www.xtrafondos.com/wallpapers/resized/montana-colorida-al-atardecer-6828.jpg?s=large" alt="girl" />
       </div>
     </div>
   </div> 

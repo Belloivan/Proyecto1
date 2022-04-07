@@ -1,12 +1,10 @@
 import React from "react";
 
-
 export default function Redessociales () {
            return (
-               //bg- No me toma la imagen, armar imagen y poner de la compu, sino colocar link y funciona
-            <div className="container max-w-full px-4   bg-[url(../numen-app/src/imagen.svg.)] py-16  mx-auto bg-local xl:px-20 lg:px-12 sm:px-6">
+            <div className="container max-w-full px-4 py-16 mx-auto xl:px-20 lg:px-12 sm:px-6 ">
                 <div className="grid grid-cols-2 gap-4 md:grid-cols-3 lg:grid-cols-3 xl:grid-cols-4 md:gap-8">
-                    <div className="flex flex-col items-center flex-shrink-0 ">
+                    <div className="flex flex-col items-center flex-shrink-0 "> 
                         <div>
                             <svg width="57" height="17" viewBox="0 0 57 17" fill="none" xmlns="http://www.w3.org/2000/svg">
                                 <path

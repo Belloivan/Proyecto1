@@ -27,7 +27,7 @@ export default function Layout({ children}) {
     }
 
   return (
-    <div className="h-screen" >
+    <div className="bg-gradient-to-r from-black via-gray-600 to-slate-400 2xl:h-screen " >
         <NavBar toggleOpen={toggleOpen} />
         {isOpen  && <Menu  toggleOpen = {toggleOpen}/> }
         { children }

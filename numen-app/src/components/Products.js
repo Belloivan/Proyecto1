@@ -87,13 +87,11 @@ export default function Products() {
     </svg>
       </div>
   ):(
-    <div className="mx-auto container py-16 px-6 bg-green-400">
+    <div className="mx-auto container py-8 px-6">
       <div className="container md:auto text-center">
-        <h1> Carrito de Compras</h1>
-        
-        <h2>Productos</h2>
+      
 
-        <div className="box grid-responsive grid justify-items-center grid-flow-row-dense  grid-cols-1 grid-rows-1 md:grid-cols-2 md:grid-rows-2 lg:grid-cols-4 grid-rows-4  ">
+        <div className="box grid-responsive grid justify-items-center grid-flow-row-dense  grid-cols-2 grid-rows-2 gap-3 md:grid-cols-2 grid-rows-2 lg:grid-cols-4 grid-rows-1  ">
           {products.map((product) => (
             <Product
               key={product["_id"]}

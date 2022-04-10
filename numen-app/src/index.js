@@ -3,11 +3,13 @@ import ReactDOM from 'react-dom';
 import './index.css';
 
 
+
 import RoutesNav from './Rutas/RoutesNav';
 
 ReactDOM.render(
   <React.StrictMode>
     <RoutesNav />
+   
   </React.StrictMode>,
   document.getElementById('root')
 );

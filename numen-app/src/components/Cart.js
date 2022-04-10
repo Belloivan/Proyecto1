@@ -97,19 +97,19 @@ const Cart = () => {
       </div>
   ) : (
      
-    <div className="mx-auto container py-16 px-6 bg-green-400">
+    <div className="mx-auto container rounded-md py-2  px-2 bg-gradient-to-r from-slate-800 via-gray-600 to-slate-400 ">
       
      <div className="container mx-auto mt-10">
     <div className="flex shadow-md my-10">
       <div className="w-full bg-white px-10 py-10">
         <div className="flex justify-between border-b pb-8">
-          <h1 className="font-semibold text-2xl">Shopping Cart</h1>
+          <h1 className="font-semibold text-2xl">Carrito de Compras</h1>
           <h2 className="font-semibold text-2xl">{ state.cart.length} Items</h2>
         </div>
         <div className="flex mt-10 mb-5">
-          <h3 className="font-semibold text-gray-600 text-xs uppercase w-2/5">Product Details</h3>
-          <h3 className="font-semibold text-center text-gray-600 text-xs uppercase w-1/5 text-center">Quantity</h3>
-          <h3 className="font-semibold text-center text-gray-600 text-xs uppercase w-1/5 text-center">Price</h3>
+          <h3 className="font-semibold text-gray-600 text-xs uppercase w-2/5">Detalle</h3>
+          <h3 className="font-semibold text-center text-gray-600 text-xs uppercase w-1/5 text-center">Cantidad</h3>
+          <h3 className="font-semibold text-center text-gray-600 text-xs uppercase w-1/5 text-center">Precio</h3>
           <h3 className="font-semibold text-center text-gray-600 text-xs uppercase w-1/5 text-center">Total</h3>
         </div>  
 
@@ -119,12 +119,21 @@ const Cart = () => {
             
           <CartItem key={index} data={item} deleteFromCart={deleteFromCart}  addToCart = {addToCart}/>
         ))}
-        
+        <span className="flex-end text-red-500 text-xs font-bold cursor-pointer no-underline  hover:underline" onClick={() =>
+                clearCart()}>Vaciar Carrito</span>
       </div>
       
       </div>
-      <div className="w-full h-8 bg-gray-300 shadow px-10 py-8" >
-          Total: {sumTotal}
+      <div className="w-full flex justify-end  items-center text-2xl h-20 bg-gray-300 shadow px-10 py-5" >
+        
+          <span className="mx-8 text-xl font-bold">Total: ${sumTotal} </span>
+          
+          
+          <button
+            className="text-white bg-[#6479A7] hover:bg-[#002A52] focus:ring-4 focus:ring-blue-300 font-medium rounded-lg text-sm px-2 py-1.5 text-center dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800"
+          > Finalizar Compra</button>
+        
+          
       </div>
       
     </div>  

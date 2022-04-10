@@ -46,6 +46,18 @@ const Product = ({ data, addToCart, deleteFromCart, cart }) => {
         ) : null}
         
       </div>
+
+        {showModal ? (
+          //MODAL DE PRODUCTO
+          <ProductModal
+              data={data}
+              addToCart={addToCart} 
+              deleteFromCart = {deleteFromCart}
+              cart = {cart||0}
+              setShowModal={setShowModal}
+          />
+        ) : null}
+        
     </div>
   );
 };

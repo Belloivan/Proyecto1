@@ -2,10 +2,10 @@ import React from "react";
 
 export default function Redessociales () {
            return (
-            <div className="container flex px-0 py-16 m-0 mx-auto bg-green-500 xl:px-20 lg:px-12 sm:px-6 ">
-                    <div className="container flex flex-col p-10 -m-10 bg-red-400"> 
+            <div className="relative flex justify-around px-0 py-16 m-0 mx-auto bg-green-500 xl:px-20 lg:px-12 sm:px-6">
+                    <div className="container flex flex-col p-10 bg-red-400"> 
                         <p className="flex justify-center mt-4 font-mono text-xl font-light leading-none text-gray-800 bg-yellow-500 ">Tell a friend</p>
-                        <div className="grid justify-around grid-cols-6 gap-0 mt-12 bg-pink-500 mx-36 ">
+                        <div className="flex justify-center gap-10 mt-12 bg-pink-500 mx-36 ">
                             <div className="flex items-center justify-center flex-shrink-0 w-8 h-8 bg-gray-800 rounded-full opacity-50 cursor-pointer hover:bg-gray-700">
                                 <svg width="18" height="17" viewBox="0 0 18 17" fill="none" xmlns="http://www.w3.org/2000/svg">
                                     <path

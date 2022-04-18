@@ -5,7 +5,6 @@ import Cart from "../components/Cart";
 import Contact from "../components/Contact";
 import Login from "../components/Login";
 import Layout from "../components/Layout";
-import Footer from "../components/Footer";
 import Redessociales from "../components/Redessociales";
 
 const RoutesNav = () => {
@@ -23,7 +22,6 @@ const RoutesNav = () => {
               
        </Routes>
        <div><Redessociales/> </div>
-       <div><Footer/></div>
        </Layout>
      </Router>
 );

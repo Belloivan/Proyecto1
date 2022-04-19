@@ -1,9 +1,10 @@
 import React from "react";
+import imagenFondo from "../assets/img/imagenFondo.jpg";
 
 export default function Redessociales () {
            return (
-            <div className="relative flex justify-center px-0 py-16 m-0 mx-auto bg-slate-800">
-                    <div className="container flex flex-col flex-wrap justify-between p-10 bg-red-300"> 
+            <div className="relative flex justify-center px-0 py-16 m-0 mx-auto" style={{background: URL ({imagenFondo})}}>
+                    <div className="container flex flex-col flex-wrap justify-between p-10 "> 
                         <p className="flex justify-center mt-4 font-mono text-4xl font-light leading-none text-gray-800 bg-yellow-500 ">Tell a friend</p>
                         <div className="flex flex-wrap justify-center gap-3 mt-12 bg-pink-500 sm:gap-10 mx-36">
                             <div className="flex items-center justify-center flex-shrink-0 w-8 h-8 bg-gray-800 rounded-full opacity-50 cursor-pointer hover:bg-gray-700">

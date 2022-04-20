@@ -1,19 +1,18 @@
 import React from "react";
-import { Link } from "react-router-dom";
+
 
 export default function Footer() {
     return ( 
-        <div className="container  max-w-full px-16 py-16 xl:px-20 lg:px-12 sm:px-6;">
-            <div className="grid grid-cols-2 gap-4 md:grid-cols-3 lg:grid-cols-3 xl:grid-cols-4 md:gap-8">
-                <div className="flex flex-col flex-shrink-0">
+        <div className="container bg-green-400  max-w-full px-16 py-16 xl:px-20 lg:px-12 sm:px-6;">
+            <div className="grid grid-cols-2 gap-4 md:grid-cols-3 lg:grid-cols-3 xl:grid-cols-4 md:gap-0">
+                <div className="flex flex-col justify-center ">
                     <div>
-                     <img src="https://www.soydemac.com/wp-content/uploads/2014/10/Logo-de-Apple-entre-2001-y-2007.jpg.webp" alt="logo" ></img>
-                    
+                     <img src="https://img.icons8.com/plasticine/100/000000/mac-os.png" alt="Logo" ></img>
                     </div>
                  
                  
                 </div>
-                <div className="ml-8 sm:ml-0">
+                <div className="ml-0 sm:-ml-5">
                     <h2 className="text-base font-semibold leading-4 text-gray-800">Company</h2>
                     <p className="mt-6 text-base leading-4 text-gray-800 cursor-pointer hover:text-gray-500">Blog</p>
                     <p className="mt-6 text-base leading-4 text-gray-800 cursor-pointer hover:text-gray-500">About Us</p>

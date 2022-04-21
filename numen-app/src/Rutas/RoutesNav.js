@@ -7,6 +7,9 @@ import Login from "../components/Login";
 import Layout from "../components/Layout";
 import Footer from "../components/Footer";
 
+import Redessociales from "../components/Redessociales";
+
+
 const RoutesNav = () => {
    return (
      <Router>
@@ -21,6 +24,7 @@ const RoutesNav = () => {
               
               
        </Routes>
+       <div><Redessociales/> </div>
        <div><Footer/></div>
        </Layout>
      </Router>

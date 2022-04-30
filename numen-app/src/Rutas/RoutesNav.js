@@ -6,8 +6,9 @@ import Contact from "../components/Contact";
 import Login from "../components/Login";
 import Layout from "../components/Layout";
 import Footer from "../components/Footer";
-
+import Heroes from "../components/Heroes";
 import Redessociales from "../components/Redessociales";
+import Vernombre from "../components/Vernombre"
 
 
 const RoutesNav = () => {
@@ -24,6 +25,8 @@ const RoutesNav = () => {
               
               
        </Routes>
+       <div><Vernombre/></div>
+       <div><Heroes/></div>
        <div><Redessociales/> </div>
        <div><Footer/></div>
        </Layout>

@@ -12,13 +12,6 @@ const Heroes = () => {
                   Y con tu mundo</ p > 
                   < button className = "w-full px-8 py-4 mt-8 dark:bg-white dark:hover:bg-gray-400 dark:hover:text-gray-100 dark:text-gray-800 sm:w-auto texto-base justificar -entre foco:anillo-2 foco:anillo-desplazamiento-2 foco:anillo-gris-700 foco:contorno-ninguno hover:bg-gris-700 fuente-medio inicial-ninguno texto-blanco bg- gris-800 elementos flexibles-centro" > 
                       Mas Informacion
-                      < div className = " ml-2 mt-0.5 " > 
-                          < svg className = " fill-stroke" width = " 16 " height = " 16 " viewBox = " 0 0 16 16 " fill = " neone " xmlns = " http://www.w3.org/2000/svg " >      
-                              < ruta d = " M3.33325 8H12.6666 " trazo = " color actual " trazoLinecap = " redondo " trazoLinejoin = " redondo " />     
-                              < ruta d = " M10 10.6667L12.6667 8 " trazo = " color actual " trazoLinecap = " redondo " trazoLinejoin = " redondo " />     
-                              < ruta d = " M10 5.33301L12.6667 7.99967 " trazo = " color actual " trazoLinecap = " redondo " trazoLinejoin = " redondo " />     
-                          </ svg >
-                      </ div >
                   </button>
               </ div >
           </ div >

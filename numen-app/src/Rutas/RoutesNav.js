@@ -9,6 +9,7 @@ import Footer from "../components/Footer";
 import Heroes from "../components/Heroes";
 import Redessociales from "../components/Redessociales";
 import Vernombre from "../components/Vernombre"
+import Banner2 from "../components/Banner2";
 
 
 const RoutesNav = () => {
@@ -25,6 +26,7 @@ const RoutesNav = () => {
               
               
        </Routes>
+       <div><Banner2/></div>
        <div><Vernombre/></div>
        <div><Heroes/></div>
        <div><Redessociales/> </div>

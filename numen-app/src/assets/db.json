@@ -1,0 +1,43 @@
+{
+  "products": [
+    {
+      "id": 1,
+      "img": "https://images.unsplash.com/photo-1595514736566-0221cb0945e2?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=580&q=80",
+      "name": "Producto A",
+      "price": 10
+    },
+    {
+      "id": 2,
+      "img": "https://images.unsplash.com/photo-1606741965326-cb990ae01bb2?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=387&q=80",
+      "name": "Producto B",
+      "price": 50
+    },
+    {
+      "id": 3,
+      "img": "https://images.unsplash.com/photo-1631281956016-3cdc1b2fe5fb?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1032&q=80",
+      "name": "Producto C",
+      "price": 100
+    },
+    {
+      "id": 4,
+      "img": "https://img.global.news.samsung.com/latin/wp-content/uploads/2019/01/Notebook-9-Pro-31-e1546961341121.jpg",
+      "name": "Producto D",
+      "price": 150
+    },
+    {
+      "id": 5,
+      "img": "http://www.vicionet.com/Vel/475-large_default/xiaomi-redmi-note-9-128gb.jpg",
+      "name": "Producto E",
+      "price": 200
+    }
+  ],
+  "cart": [
+    {
+      "id": 1,
+      "img": "https://images.unsplash.com/photo-1595514736566-0221cb0945e2?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=580&q=80",
+      "name": "Producto A",
+      "price": 10,
+      "quantity": 3
+    }
+  ]
+}

@@ -3,8 +3,10 @@ module.exports = {
     "./src/**/*.{js,jsx,ts,tsx}",
   ],
   theme: {
-    extend: {
+    theme: {
     },
+    extend: {},
   },
+  darkMode: 'class',
   plugins: [],
 }

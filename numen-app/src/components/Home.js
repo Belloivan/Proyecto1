@@ -1,22 +1,16 @@
-import React from 'react'
-import Banner from './Banner'
-import Carrusel from './Carrusel'
+import React from "react";
+import Banner from "./Banner";
+import Carrusel from "./Carrusel";
 
-import Products from './Products'
+import Products from "./Products";
 
 export default function Home() {
-
   return (
-
-
     <div>
-    <Banner />
-    <Products />
-    <Carrusel />
-
-   
-  
+      
+      <Banner />
+      <Products />
+      <Carrusel />
     </div>
-
-  )
+  );
 }

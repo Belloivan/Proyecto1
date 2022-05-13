@@ -99,7 +99,7 @@ export default function NavBar({ toggleOpen}) {
             />
           </svg>
           
-          <span id="cartIng" className="absolute top-0 right-0 inline-flex items-center justify-center px-1 py-1 text-xs font-bold leading-none text-red-100 transform translate-x-1/6 -translate-y-1/6 bg-red-600 rounded-full">0</span>
+          <span id="cartIng2" className="absolute top-0 right-0 inline-flex items-center justify-center px-1 py-1 text-xs font-bold leading-none text-red-100 transform translate-x-1/6 -translate-y-1/6 bg-red-600 rounded-full">0</span>
         </Link>
 
         <Link to="/login" className="p-4">

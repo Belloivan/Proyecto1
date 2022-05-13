@@ -31,7 +31,7 @@ export default function Products() {
     let endpoint = `https://apicarrito.maxiconstancio.repl.co/cart/${data.codeProduct}`;
 
     if (all || data.quantity === 1) {
-      console.log("salta aca");
+      
       axios.delete(endpoint).then(console.log("ok"));
       dispatch({ type: TYPES.REMOVE_ALL_PRODUCTS, payload: data.codeProduct });
     } else {
@@ -74,9 +74,10 @@ export default function Products() {
 
   let count = 0;
 
-  let countCar = state.cart.map((item) => {
+  state.cart.map((item) => {
     count = count + item.quantity;
     document.getElementById("cartIng").innerHTML = count;
+    document.getElementById("cartIng2").innerHTML = count;
   });
 
   return isLoading ? (

@@ -3,7 +3,7 @@ import { Link } from 'react-router-dom'
 
 export default function Menu({toggleOpen}) {
   return (
-    <div  className="grid grid-rows-2 text-center items-center bg-gray-400 float-right" onClick={toggleOpen}>
+    <div  className="sticky top-16 grid grid-rows-2 text-center items-center bg-gray-400 float-right z-50" onClick={toggleOpen}>
         
         <Link to="/" className="p-4">
             

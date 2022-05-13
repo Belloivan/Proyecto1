@@ -1,4 +1,5 @@
 import React from 'react'
+import Banner from './Banner'
 import Carrusel from './Carrusel'
 
 import Products from './Products'
@@ -9,6 +10,7 @@ export default function Home() {
 
 
     <div>
+    <Banner />
     <Products />
     <Carrusel />
 

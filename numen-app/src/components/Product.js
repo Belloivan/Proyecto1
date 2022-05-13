@@ -7,9 +7,9 @@ const Product = ({ data, addToCart, deleteFromCart, cart }) => {
   
 
   return (
-    <div className="product mt-8 p-2 px-10 max-w-sm bg-gradient-to-r from-slate-700 via-gray-600 to-slate-400 rounded-lg shadow-md">
+    <div className="product max-w-72 mt-8 p-2 px-10 max-w-sm bg-gray-400 rounded-lg shadow-md">
       <img
-        className="box h-28 w-28  p-2 rounded-t-lg"
+        className="box h-36 w-36  p-2 rounded-t-lg"
         src={img}
         alt="product-img"
         onClick={() => setShowModal(true)}

@@ -8,15 +8,15 @@ export default function NavBar({ toggleOpen}) {
   
 
   return (
-    <div className="sticky top-0 w-full flex items-center justify-between h-16 text-black bg-white shadow-sm z-50">
+    <div className="sticky top-0 w-full flex items-center justify-between h-16 text-black bg-gray-200 shadow-sm z-50">
       <Link to="/" className="pl-8">
         <img className="w-16 h-16" src={logo} alt="Logo"></img>
       </Link>
       
       
 
-      <div className="px-4 cursor-pointer flex flex-row items-center justify-between md:hidden" >
-      <Link to="/cart" className="p-4 ml-4 relative md:hidden">
+      <div className="px-4 flex flex-row items-center justify-between md:hidden" >
+      <Link to="/cart" className="p-4 mr-4 cursor-pointer relative md:hidden">
           <svg
             xmlns="http://www.w3.org/2000/svg"
             className="w-6 h-6 "
@@ -36,7 +36,7 @@ export default function NavBar({ toggleOpen}) {
         </Link>
         <svg
           xmlns="http://www.w3.org/2000/svg"
-          className="w-6 h-6 content-center"
+          className="w-6 h-6 content-center cursor-pointer"
           onClick={toggleOpen}
           fill="none"
           viewBox="0 0 24 24"
